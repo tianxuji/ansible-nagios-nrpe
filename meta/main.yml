@@ -1,7 +1,7 @@
 ---
 galaxy_info:
-  author: tianxuji
-  description: "Install nagios client nrpe on multi OS".
+  author: Tianxu Ji 
+  description: "Install nagios client nrpe on multi OS."
   min_ansible_version: 1.2
   #
   # Below are all platforms currently available. Just uncomment
