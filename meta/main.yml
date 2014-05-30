@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: tianxuji 
+  author: tianxuji
   description: Install nagios client nrpe on multi OS.
   company: your company (optional)
   license: license (GPLv2, CC-BY, etc)
