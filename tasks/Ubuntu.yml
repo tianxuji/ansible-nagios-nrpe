@@ -1,0 +1,10 @@
+#  if private sources.list is needed
+#- name: Copy Ubuntu sources.list file to client
+#  copy: src=sources.list.ubuntu dest=/etc/apt/sources.list
+#           owner=root group=root mode=0644
+- name: Install nagios nrpe server
+  apt: pkg={{item}} update_cache=yes
+  environment: proxy
+  with_items:
+  - nagios-nrpe-server
+

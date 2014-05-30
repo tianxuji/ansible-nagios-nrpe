@@ -1,0 +1,8 @@
+- name: Refresh repo
+  command: yum makecache
+  environment: proxy
+- name: Install nagios-nrpe 
+  yum: pkg={{ item }} state=present
+  environment: proxy
+  with_items:
+    - nrpe 

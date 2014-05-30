@@ -1,0 +1,17 @@
+#- name: Copy epel gpg key file
+#  copy: src=RPM-GPG-KEY-EPEL-6 dest=/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+#
+#- name: Replace official repo url with {{ mirror_url }}
+#  template: src={{ item }} dest=/etc/yum.repos.d
+#  with_items:
+#    - CentOS-Base.repo
+#    - epel.repo
+#    - tmp.repo
+- name: Refresh repo
+  command: yum makecache
+  environment: proxy
+- name: Install nagios-nrpe 
+  yum: pkg={{ item }} state=present
+  environment: proxy
+  with_items:
+    - nagios-nrpe 

@@ -1,0 +1,8 @@
+---
+# vars file for ansible-nagios-client
+#mirror_url: http://
+#baseurl: http://
+#proxy:
+#  http_proxy: http://
+#  https_proxy: https://
+#  no_proxy:  
